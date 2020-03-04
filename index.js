@@ -5,7 +5,7 @@ http
     switch (request.method + ' ' + request.url) {
       case 'GET /': {
         // Set up CORS for the browser site demo
-        response.setHeader('Access-Control-Allow-Origin', 'http://localhost:5000');
+        response.setHeader('Access-Control-Allow-Origin', 'http://my-client.com:5000');
         response.setHeader('Access-Control-Allow-Credentials', 'true');
 
         const nonce = Math.random().toString().slice('0.'.length);
@@ -17,7 +17,7 @@ http
       }
       case 'GET /?cookie': {
         // Set up CORS for the browser site demo
-        response.setHeader('Access-Control-Allow-Origin', 'http://localhost:5000');
+        response.setHeader('Access-Control-Allow-Origin', 'http://my-client.com:5000');
         response.setHeader('Access-Control-Allow-Credentials', 'true');
 
         const cookie = request.headers.cookie;
