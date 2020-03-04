@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cookie</title>
+    <script>
+      window.addEventListener('load', async () => {
+        const response = await fetch('http://localhost:8000' + window.location.search, { credentials: 'include' });
+        const text = await response.text();
+        document.body.innerHTML = text;
+      });
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
